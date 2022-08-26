@@ -1,0 +1,139 @@
+:root {
+    --Fuente: 'Open Sans', sans-serif;
+    --FuenteHeading: 'PT Sans', sans-serif;
+    --primario: #4b7447;
+    --secundario: #563e20;
+    --tomate: #cf2131;
+    --blanco: #fff;
+    --negro: #000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--FuenteHeading);
+    line-height: 2;
+    
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--FuenteHeading);
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: var(--primario);
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--FuenteHeading);
+    background-color: var(--tomate);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: 3rem;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+.presentacion {
+    display: flex;
+    background-image: url(/banner.jpg);
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    margin: auto 1rem;
+}
+
+@media (min-width: 768px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+.Contenedor div {
+    text-align: center;
+    flex: 1;
+    border: solid;
+    border-color: var(--secundario);
+    margin-top: 1rem;
+    background-color: var(--primario);
+    border-radius: 1rem;
+}
+/* .Contenedor div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cf2131;
+} */
+.Contenedor div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cf2131;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-family: var(--FuenteHeading);
+    font-weight: bold;
+}
+#graficos {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#graficos div{
+    margin: 0 auto;
+}
+
+/* @media (min-width: 768px) {
+    #graficos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+} */
